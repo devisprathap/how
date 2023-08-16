@@ -1,0 +1,75 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">Indian Bank<br>
+    Enjoy Banking . . .
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<br>
+     <a class="btn btn-warning" href="{% url 'bankapp:login' %}">Login   </a> > > > >
+
+        <a class="btn btn-warning" href="{% url 'bankapp:register' %}"> Register  </a>> > > >  >
+     <a class="btn btn-danger" href="{% url 'bankapp:logout' %}">Logout       </a>> > > > > > >
+     <div>   <div class="dropdown">
+<div class="btn btn-warning">Branches</div>
+  <div class="dropdown-btn">~</div>
+       <div class="dropdown-content">
+
+
+     <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Kochi">KOCHI</a>
+     <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Aluva">ALUVA</a>
+    <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Angamaly"> ANGAMALY</a>
+    <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Kakkanad">KAKKANAD</a>
+     <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Vyttila">VYTTILA</a>
+  </a>
+</div>
+
+</div>
+     </div>
+    </nav>
+   <meta name="description" content="{% block metadescription %} {% endblock %}" >
+
+
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+
+
+
+    <div class="bg-image d-flex justify-content-center align-items-center"
+  style="
+    background-image: url('https://mdbcdn.b-cdn.net/img/new/fluid/nature/015.webp');
+    height: 100vh;
+  ">
+
+<br>
+         <br>
+         <br>
+
+    <h4 class="text-white">  Indian Bank
+        <br>
+    </h4>
+         <a class="" href="{% url 'bankapp:link' %}"><h3>Click here...<br>
+             <br>
+             To accept the application
+
+         </h3></a>
+
+
+-
+    <br>
+    <br>
+
+
+
+
+
+</body>
+</html>
